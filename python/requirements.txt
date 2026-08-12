@@ -1,0 +1,2 @@
+# Requirements
+None for know as only Python3 was used
