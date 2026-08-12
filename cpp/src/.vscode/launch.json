@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/main",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+           "setupCommands": [
+    {
+        "description": "Disable startup with shell",
+        "text": "set startup-with-shell off",
+        "ignoreFailures": true
+    },
+    {
+        "description": "Disable debuginfod",
+        "text": "set debuginfod enabled off",
+        "ignoreFailures": true
+    },
+    {
+        "description": "Disable debug info fetching",
+        "text": "set debug-file-directory ''",
+        "ignoreFailures": true
+    },
+    {
+        "description": "Disable auto-loading",
+        "text": "set auto-load safe-path /",
+        "ignoreFailures": true
+    }
+
+]
+        }
+    ]
+}
